@@ -287,7 +287,7 @@ class P1(TemplateView):
         """ Проверяем наличие категорий по фильтру. Возвращаем найденный объект либо существующий """
         Q_FILTER = Q()
         for key in params.keys():
-            if key and params.get(key, None):
+            if key and params.get(key, None) and not any([x in key for x in exclude_params]):
                 Q_FILTER.add(
                     Q(**{key: params[key]}), 
                     Q.AND
