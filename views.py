@@ -22,8 +22,8 @@ class P1(TemplateView):
     ** ВНИМАНИЕ!!! Работу с изображениями смотри в основной части на PHP
     """
     site_host = None
-    site_url = 'https://www.gryazi.net/catalog/'
-    site_categories_url = 'https://www.gryazi.net/catalog/dezinfitsiruyushchie_sredstva/'
+    site_url = ''
+    site_categories_url = ''
     categories_list = []
     main_categories_list = []
     run_datetime = None
